@@ -1,13 +1,13 @@
 module "minikube" {
   source = "github.com/scholzj/terraform-aws-minikube"
 
-  aws_region    = "us-east-1"
+  aws_region    = "us-east-1a"
   cluster_name  = "my-minikube"
   aws_instance_type = "t3.medium"
   ssh_public_key = "~/.ssh/id_rsa.pub"
   aws_subnet_id = "subnet-0efb935738860f410"
-  ami_image_id = "ami-b81dbfc5"
-  hosted_zone = "my-domain.com"
+  #ami_image_id = "ami-b81dbfc5"
+  hosted_zone = "daws76s.online"
   hosted_zone_private = false
 
   tags = {
